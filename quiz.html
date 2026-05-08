@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container py-5">
+
+<div class="card-custom text-center">
+
+<h1 class="mb-4">Mini Quiz</h1>
+
+<h4>Tekanan darah normal adalah?</h4>
+
+<button class="btn btn-success mt-4" onclick="benar()">
+120/80
+</button>
+
+<button class="btn btn-danger mt-4" onclick="salah()">
+200/100
+</button>
+
+<h3 id="hasil" class="mt-4"></h3>
+
+</div>
+
+</div>
+
+<script>
+function benar(){
+document.getElementById('hasil').innerHTML='Jawaban Benar';
+}
+
+function salah(){
+document.getElementById('hasil').innerHTML='Jawaban Salah';
+}
+</script>
+
+</body>
+</html>
